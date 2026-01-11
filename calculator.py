@@ -20,6 +20,12 @@ class Calculator:
     def multiply(self, a, b):
         """Multiply two numbers and return the result."""
         return a * b
+        
+    def divide(self, a, b):
+        """Divide first number by second and return the result."""
+        if b == 0:
+            raise ValueError("Cannot divide by zero!")
+        return a / b
 
     
 
