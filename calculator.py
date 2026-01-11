@@ -20,22 +20,9 @@ class Calculator:
     def multiply(self, a, b):
         """Multiply two numbers and return the result."""
         return a * b
+
     
-    def divide(self, a, b):
-        """Divide first number by second and return the result."""
-        if b == 0:
-            raise ValueError("Cannot divide by zero!")
-        return a / b
-    
-    def power(self, base, exponent):
-        """Calculate base raised to the power of exponent."""
-        return base ** exponent
-    
-    def square_root(self, number):
-        """Calculate square root of a number."""
-        if number < 0:
-            raise ValueError("Cannot calculate square root of negative number!")
-        return number ** 0.5
+
 
 
 def main():
@@ -50,9 +37,6 @@ def main():
     print(f"10 - 4 = {calc.subtract(10, 4)}")
     print(f"6 * 7 = {calc.multiply(6, 7)}")
     print(f"15 / 3 = {calc.divide(15, 3)}")
-    print(f"2 ^ 8 = {calc.power(2, 8)}")
-    print(f"√16 = {calc.square_root(16)}")
-
 
 if __name__ == "__main__":
     main()
