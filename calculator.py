@@ -11,7 +11,7 @@ class Calculator:
     
     def add(self, a, b):
         """Add two numbers and return the result."""
-        return a + b
+        return b + a
     
     def subtract(self, a, b):
         """Subtract second number from first and return the result."""
